@@ -71,8 +71,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Generic",
-    "path": "folders/Sprites/BaseUI/Generic.yy",
+    "name": "PlaceHolder",
+    "path": "folders/Sprites/Base Project/BaseUI/Generic/PlaceHolder.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_placeholder_text",

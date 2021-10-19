@@ -23,13 +23,21 @@ draw_clear_alpha(c_black, 0);
 shader_set(shd_premlpha);
 //设置混合像素的因子，源模式为RGBA(1,1,1,1),目标模式为(As,As,As,As)
 gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
+//设置绘制颜色
+draw_set_color($029900);
+draw_set_halign(fa_left);
+
+
+
 
 //在指定表面绘制文字,从位置x为0开始,绘制起始从文本偏移开始,绘制换行宽度为文本框宽度
-draw_text_ext(0, text_yoffset, info_text,30, text_srf_w);
+draw_text_ext(text_padding, text_yoffset, info_text,-1, text_srf_w);
 //释放绘制面
 surface_reset_target();
 //将生成的绘制面画在实际画面上
-draw_surface(text_srf, x1_click + text_padding, y1_click + text_padding);
+if(surface_exists(text_srf)){
+	draw_surface(text_srf, x1_click, y1_click + text_padding);
+}
 
 //释放着色器
 shader_reset();

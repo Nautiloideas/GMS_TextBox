@@ -51,7 +51,7 @@ if (global.mobile) {
 	if (in_bounds) {
 		if (!mouse_over && !device_mouse_check_button(0, mb_left) || mouse_down) {
 				mouse_over = true;
-			}
+		}
 	} else {
 		mouse_over = false;
 	}
