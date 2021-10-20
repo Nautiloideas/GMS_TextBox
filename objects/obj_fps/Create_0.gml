@@ -20,3 +20,5 @@ fps_counter		= 0;
 fps_text		= "fps: -";
 fps_ds			= ds_grid_create(1, fps_count_to);
 fps_real_ds		= ds_grid_create(1, fps_count_to);
+
+text_queue = ds_queue_create();

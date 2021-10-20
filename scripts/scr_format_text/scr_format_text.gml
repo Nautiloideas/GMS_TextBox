@@ -13,8 +13,19 @@ insert = 0
 go = 0
 prev = 0
 text = str
+
+
 var _len = string_length(text);
-print(_len);
+maxNum = round(_len/count);
+
+print("len"+string(_len));
+print("maxNum"+string(maxNum));
+
+if(_len>count){
+	text = string_insert("\n",text,maxNum*count);
+}
+
+
 //根据字符串的长度循环修改
 repeat(_len) {
 	//如果到了指定的换行位置

@@ -24,13 +24,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","path":"sprites/spr_placeholder_text/spr_placeholder_text.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","path":"sprites/spr_placeholder_text/spr_placeholder_text.yy",},"LayerId":{"name":"2bb71bec-8840-4751-9254-13cd094fb668","path":"sprites/spr_placeholder_text/spr_placeholder_text.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","path":"sprites/spr_placeholder_text/spr_placeholder_text.yy",},"LayerId":{"name":"4cefc227-a8c6-43f1-a7a7-6444b8fb396e","path":"sprites/spr_placeholder_text/spr_placeholder_text.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_placeholder_text","path":"sprites/spr_placeholder_text/spr_placeholder_text.yy",},"resourceVersion":"1.0","name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","path":"sprites/spr_placeholder_textbox/spr_placeholder_textbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","path":"sprites/spr_placeholder_textbox/spr_placeholder_textbox.yy",},"LayerId":{"name":"2bb71bec-8840-4751-9254-13cd094fb668","path":"sprites/spr_placeholder_textbox/spr_placeholder_textbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","path":"sprites/spr_placeholder_textbox/spr_placeholder_textbox.yy",},"LayerId":{"name":"4cefc227-a8c6-43f1-a7a7-6444b8fb396e","path":"sprites/spr_placeholder_textbox/spr_placeholder_textbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_placeholder_textbox","path":"sprites/spr_placeholder_textbox/spr_placeholder_textbox.yy",},"resourceVersion":"1.0","name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_placeholder_text","path":"sprites/spr_placeholder_text/spr_placeholder_text.yy",},
+    "spriteId": {"name":"spr_placeholder_textbox","path":"sprites/spr_placeholder_textbox/spr_placeholder_textbox.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -42,7 +42,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"724dff28-4347-4ae1-b7f8-cb35aec1fd70","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","path":"sprites/spr_placeholder_text/spr_placeholder_text.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9735f231-a8a2-4f56-bf3a-f1a1de22e3cf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2ee5b41-7196-4b38-8426-cee6889cb9e2","path":"sprites/spr_placeholder_textbox/spr_placeholder_textbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -59,9 +59,9 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_placeholder_text","path":"sprites/spr_placeholder_text/spr_placeholder_text.yy",},
+    "parent": {"name":"spr_placeholder_textbox","path":"sprites/spr_placeholder_textbox/spr_placeholder_textbox.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_placeholder_text",
+    "name": "spr_placeholder_textbox",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -75,7 +75,7 @@
     "path": "folders/Sprites/Base Project/BaseUI/Generic/PlaceHolder.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_placeholder_text",
+  "name": "spr_placeholder_textbox",
   "tags": [],
   "resourceType": "GMSprite",
 }

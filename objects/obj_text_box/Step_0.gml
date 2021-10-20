@@ -38,7 +38,7 @@ if (mouse_over) {
 //var _selected		= global.selected_module;
 //info_text			= (_selected == noone) ? instruction_text : _selected.info_text;
 
-text_height			= string_height_ext(info_text, -1, text_srf_w);
+//text_height			= string_height_ext(info_text, -1, text_srf_w);
 //可滑动范围限制
 text_yoffset		= clamp(text_yoffset, -text_height + text_srf_h, 0);
 scroll_arrow_blink	= 0.95 + 0.5 * sin(current_time / 200);
