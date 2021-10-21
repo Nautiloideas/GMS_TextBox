@@ -15,28 +15,29 @@ function scr_draw_text(){
 	var _size = ds_list_size(ds_list);
 	
 	for(var i=0;i<_size;i++){
-		var _item = ds_list[| i];
-		var _isize = ds_list_size(_item);
 		
-		for(var j=0;j<_isize;j++){
-				var _msg= _item[| j]
-				var text = _msg.p_title +_msg.p_content;
-				//	//设置绘制颜色
-				//var _f_width = string_width_ext(com_text,-1,text_srf_w)
-				////行最多字数计算(画布宽度-两边间隔)/单个字宽度
-				//count =round((text_srf_w)/_f_width);
-				//info_text = scr_format_text(instruction_text,count);
-				draw_set_color(_msg.p_color);
+		var _item = ds_list[| i];
+		//var _isize = ds_list_size(_item);
+		
+		var height= scr_draw_msg(_item,8,y_pos+offset,srf_w);
+		//draw_text_ext(8,y_pos+offset,msg,-1,srf_w);
+		offset += height;
+		
+		//for(var j=0;j<_isize;j++){
+		//		var _msg= _item[| j]
+		//		var text = _msg.p_title +_msg.p_content;
+		//		//	//设置绘制颜色
+		//		//var _f_width = string_width_ext(com_text,-1,text_srf_w)
+		//		////行最多字数计算(画布宽度-两边间隔)/单个字宽度
+		//		//count =round((text_srf_w)/_f_width);
+		//		//info_text = scr_format_text(instruction_text,count);
+		//		draw_set_color(_msg.p_color);
 				
-				var da = scr_msg_height(text,srf_w);
-				var msg =da.t;
-				var height = da.h;
-				draw_text_ext(8,y_pos+offset,msg,-1,srf_w);
-				offset = height;
-			}
+				
+		//	}
 	}
 	
-	
+	return offset;
 	//var _size = 0;
 	//if(ds_exists(ds_list,ds_type_list)){
 	//	_size =  ds_list_size(ds_list);

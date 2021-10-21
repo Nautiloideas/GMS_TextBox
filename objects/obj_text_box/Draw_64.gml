@@ -27,7 +27,7 @@ gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 
 draw_set_halign(fa_left);
 
-scr_draw_text(ds_msg_chain,x2_click,text_yoffset,text_srf_w);
+text_height= scr_draw_text(ds_msg_chain,x2_click,text_yoffset,text_srf_w);
 
 
 ////在指定表面绘制文字,从位置x为0开始,绘制起始从文本偏移开始,绘制换行宽度为文本框宽度

@@ -11,3 +11,6 @@ xoffset		= string_width(caption) + 4;
 //参数值
 text_offset	= "";
 delta_y_pos	= "";
+
+
+obj = obj_text_gui;

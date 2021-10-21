@@ -21,6 +21,9 @@ function create_msg_text(){
 		}else if(type==msg_type.error){
 			_struct = new ErrorMsg(m,string_length(m));
 			ds_list_add(ds,_struct);
+		}else if(type==msg_type.warn){
+			_struct = new WarnMsg(m,string_length(m));
+			ds_list_add(ds,_struct);
 		}
 	}
 	

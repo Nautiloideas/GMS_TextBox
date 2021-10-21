@@ -1,0 +1,1 @@
+obj = obj_text_box;
