@@ -31,7 +31,7 @@ text_srf_h			= y2_click - y1_click - 2 * text_padding; // ...but here it's just 
 var _f_width = string_width_ext(com_text,-1,text_srf_w)
 //行最多字数计算(画布宽度-两边间隔)/单个字宽度
 count =round((text_srf_w)/_f_width);
-info_text = scr_format_text(instruction_text,count);
+info_text = scr_text_breakline(instruction_text,count);
 print(count);
 
 scroll				= false;

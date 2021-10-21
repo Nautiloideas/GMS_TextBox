@@ -2,7 +2,7 @@
 ///@function scr_format_text(str, count) 
 /// @@param {string} str
 /// @@param {real} count
-function scr_format_text(){
+function scr_text_breakline(){
 
 	var arg	= 0;
 	var str	= argument[arg++];
@@ -18,8 +18,8 @@ text = str
 var _len = string_length(text);
 maxNum = round(_len/count);
 
-print("len"+string(_len));
-print("maxNum"+string(maxNum));
+//print("len"+string(_len));
+//print("maxNum"+string(maxNum));
 
 if(_len>count){
 	text = string_insert("\n",text,maxNum*count);

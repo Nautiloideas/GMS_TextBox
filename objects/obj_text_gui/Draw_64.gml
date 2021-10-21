@@ -10,11 +10,12 @@ scr_draw_9slice_box(frame_sprite, x1_click, y1_click, x2_click, y2_click, frame_
 
 // 准备绘制面:
 //如果不存在绘制面
-if (!surface_exists(text_srf))
+if (!surface_exists(text_srf)){
 //不存在绘制面则新建一个,text_srf为该表面的索引
 //创建宽度text_srf_w，创建高度text_srf_h
 	text_srf = surface_create(text_srf_w, text_srf_h);
-//将绘制点放到指定的绘制面
+}
+//指定GUI的绘制面
 surface_set_target(text_srf);
 //清除可能存在的黑色像素点,全部设为透明
 draw_clear_alpha(c_black, 0);
