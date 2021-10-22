@@ -28,6 +28,8 @@ function scr_draw_msg(){
 			if(w>(srf_w)){
 				t_msg +="\n";
 				w=string_width_ext(char,-1,srf_w);
+			}else if(char=="\n"){
+				w=string_width_ext(char,-1,srf_w);
 			}
 			if(i>0){
 				t_msg +=char;

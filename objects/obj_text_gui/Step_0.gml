@@ -44,12 +44,18 @@ text_yoffset		= clamp(text_yoffset, -text_height + text_srf_h, 0);
 scroll_arrow_blink	= 0.95 + 0.5 * sin(current_time / 200);
 
 //循环判定鼠标是否在右下坐标附近
-if(point_distance(x2_click,y2_click,mouse_x,mouse_y)<10){
-	if((x2_click-mouse_x)<5 & (x2_click-mouse_y)<3){
-		cursor_sprite = spr_mouse_nwse;
+if(os_type == os_windows || os_type == os_linux || os_type == os_macosx){
+	if(point_distance(x2_click,y2_click,mouse_x,mouse_y)<10){
+		if((x2_click-mouse_x)<5 & (x2_click-mouse_y)<3){
+			cursor_sprite = spr_mouse_nwse;
+		}else{
+			cursor_sprite = spr_mouse_cursor;
+		}
 	}else{
-		cursor_sprite = spr_mouse_cursor;
+	cursor_sprite = spr_mouse_cursor;
 	}
 }else{
-	cursor_sprite = spr_mouse_cursor;
+	cursor_sprite = -1;
 }
+
+

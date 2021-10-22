@@ -68,5 +68,11 @@ else
 }
 
 //Cursor 
-cursor_sprite = spr_mouse_nwse;
+
 window_set_cursor(cr_none);
+if(os_type == os_windows || os_type == os_linux || os_type == os_macosx){
+	cursor_sprite = spr_mouse_nwse;
+}else{
+	cursor_sprite = -1;
+}
+

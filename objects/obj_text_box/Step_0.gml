@@ -12,6 +12,7 @@
 if (mouse_pressed) {
 	scroll = true;
 	delta_y = mouse_y - text_yoffset;
+	
 }
 
 // 松开鼠标左键后停止拖动状态
@@ -20,8 +21,9 @@ if (mouse_check_button_released(mb_left))
 
 // 如果正在按住拖动
 if (scroll)
-	//修改移动位置,
+{	//修改移动位置,
 	text_yoffset = mouse_y - delta_y;
+}
 
 // 鼠标滑轮滚动方式:
 if (mouse_over) {
@@ -44,12 +46,16 @@ text_yoffset		= clamp(text_yoffset, -text_height + text_srf_h, 0);
 scroll_arrow_blink	= 0.95 + 0.5 * sin(current_time / 200);
 
 //循环判定鼠标是否在右下坐标附近
-if(point_distance(x2_click,y2_click,mouse_x,mouse_y)<10){
-	if((x2_click-mouse_x)<5 & (x2_click-mouse_y)<3){
-		cursor_sprite = spr_mouse_nwse;
+if(os_type == os_windows || os_type == os_linux || os_type == os_macosx){
+	if(point_distance(x2_click,y2_click,mouse_x,mouse_y)<10){
+		if((x2_click-mouse_x)<5 & (x2_click-mouse_y)<3){
+			cursor_sprite = spr_mouse_nwse;
+		}else{
+			cursor_sprite = spr_mouse_cursor;
+		}
 	}else{
-		cursor_sprite = spr_mouse_cursor;
+	cursor_sprite = spr_mouse_cursor;
 	}
 }else{
-	cursor_sprite = spr_mouse_cursor;
+	cursor_sprite = -1;
 }
