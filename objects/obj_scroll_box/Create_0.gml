@@ -49,4 +49,13 @@ count_step = 0;
 anmi_switch = false;
 //滑动动画移动的长度
 anmi_height = 0;
+//anmi_height的记录值
+move_height = 0;
+//按下时的位置
+p_pos = 0;
+//松开时的位置
+r_pos = 0;
+//滑动方向,true为向上滑动
+sco_up = false;
+
 

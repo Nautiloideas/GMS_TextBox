@@ -15,7 +15,6 @@ step +=1;
 if (mouse_pressed) {
 	scroll = true;
 	delta_y = mouse_y - text_yoffset;
-	
 }
 
 
@@ -30,10 +29,20 @@ if (scroll)
 }
 
 
-if(anmi_height!=0){
+if(floor(anmi_height)!=0){
 	print(anmi_height);
-	text_yoffset -= 1;
-	anmi_height -=1;
+	//text_yoffset -= 1;
+	var off = 8;
+	//100*(1/abs((move_height+0.5)-anmi_height));
+	print("move_height="+string(move_height));
+	//off = clamp(off,0,abs(anmi_height));
+	print("off="+string(off));
+	if(sco_up){
+		text_yoffset += off;
+	}else{
+		text_yoffset -= off;
+	}
+	anmi_height -= off;
 }else{
 	anmi_switch =false;
 }
